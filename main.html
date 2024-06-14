@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title >Exhibit A</title>
+		<link rel ="stylesheet" href="/home/avrojit/EXHIBIT/styles.css">
+
+	</head>
+	<body>
+		
+	<div class = "balls">
+	<nav>
+		<img src ="/home/avrojit/EXHIBIT/logo.png",class="logo">
+		<ul>
+			<li class="login-btn">
+				<span class="icon active"> 
+					<ion-icon name="people-outline"></ion-icon>
+				</span>
+				
+			</li>
+			<li class="login-btn">
+				<span class="icon active"> 
+					<ion-icon name="newspaper-outline"></ion-icon>
+				</span>
+				
+				</a> 
+			</li>
+			<li class="login-btn">
+				<span class="icon active"> 
+					<ion-icon name="mic-outline"></ion-icon>
+				</span>
+				
+			</li>
+			<li class="login-btn">
+				<span class="icon act"> 
+					<ion-icon name="footsteps-outline"></ion-icon>
+				</span>
+				
+			</li>
+			<div class = "indicator">
+	 </div>
+
+		</ul>
+
+		
+	</nav>
+		
+	
+
+	 </div>
+	 <div class="spacer">
+	 	<div class="animated-element">
+    <h1 class="title">EXHIBIT A</h1>
+  </div>
+</div>
+</div>	
+<div class="spacer"></div>
+
+
+ <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+ 
+ <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+ 
+ <script type="script.js"></script>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script> 
+
+<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+
+
+<script >
+let tl=gsap.timeline({
+	scrollTrigger: {
+		trigger: '.animated-element',
+		start: 'top center',
+		end: 'bottom center',
+		scrub: true,
+		markers: true
+	}
+})
+tl.to ('.animated-element',
+{
+	x:800
+})
+const lenis =new Lenis()
+
+lenis.on('scroll', (e)=>{console.log(e)})
+function raf(time)
+{
+	lenis.raf(time)
+	requestAnimationFrame(raf)
+}
+
+
+</script>>
+
+	</body>
+
+</html>
+
